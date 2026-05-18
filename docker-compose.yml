@@ -1,0 +1,12 @@
+services:
+
+  customer-service:
+    build: .
+
+    ports:
+      - "8081:8081"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://pointofsale-mysql-1:3306/shop_db
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: IJSE1234
